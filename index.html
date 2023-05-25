@@ -7,14 +7,14 @@
 
     body {
       background-color: #FFFFFF; /* White background color */
-      color: #000000; /* Black text color */
+      color: #FFFFFF; /* White text color */
       font-family: 'Montserrat', sans-serif; /* Modern font style */
       margin: 0; /* Remove default margin */
       padding: 0; /* Remove default padding */
     }
 
     .header {
-      background: linear-gradient(-45deg, #39add0, #87ceeb); /* Blue and light blue gradient */
+      background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
       padding: 20px; /* Add padding to the header */
       display: flex; /* Enable flexbox layout */
       align-items: center; /* Center align items vertically */
@@ -22,14 +22,15 @@
 
     h1 {
       color: #FFFFFF; /* White heading color */
+      font-family: 'Montserrat', sans-serif; /* Modern font style */
     }
 
     .profile-image {
       width: 185px;
-      padding-top: 115px; /* Set padding-top to the same value as width */
+      height: 185px;
       border-radius: 50%; /* Make it a circle */
-      background-color: #FFFFFF; /* White circle color */
       margin-right: 20px; /* Add right margin */
+      object-fit: cover; /* Maintain aspect ratio and cover container */
     }
 
     .content {
@@ -42,12 +43,13 @@
       padding: 4px; /* Add padding to the button group */
       display: flex; /* Enable flexbox layout */
       justify-content: space-between; /* Distribute buttons evenly */
+      margin-bottom: 20px; /* Add margin bottom for spacing */
     }
 
     .button {
       width: 230px;
       height: 50px;
-      background: linear-gradient(-45deg, #39add0, #87ceeb); /* Blue and light blue gradient */
+      background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
       border: 2px solid #FFFFFF; /* White outline */
       color: #FFFFFF; /* White text color */
       font-size: 16px;
@@ -58,13 +60,49 @@
       align-items: center; /* Center align text vertically */
       justify-content: center; /* Center align text horizontally */
     }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Center align skills horizontally */
+      margin-top: 20px;
+    }
+
+    .skill {
+      width: 170px;
+      height: 40px;
+      background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
+      border: 2px solid #FFFFFF; /* White outline */
+      color: #FFFFFF; /* White text color */
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 0px; /* Rounded corners */
+      cursor: pointer;
+      display: flex; /* Enable flexbox layout */
+      align-items: center; /* Center align text vertically */
+      justify-content: center; /* Center align text horizontally */
+      margin-bottom: 10px;
+    }
+
+    .skills-header {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000000; /* Black heading color */
+    }
+
+    .about-me {
+      margin-bottom: 20px; /* Add margin bottom for spacing */
+      color: #000000; /* Black text color */
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <div class="profile-image"></div>
+    <img class="profile-image" src="profile.png" alt="Your Image">
     <div>
-      <h1>Benjamin Pieczynski</h1>
+      <h1>BENJAMIN PIECZYNSKI</h1>
       <p>I am an Astronomy Masters Student completing my degree in the Summer of 2023 looking to start my career in computational physics or software engineering.</p>
     </div>
   </div>
@@ -75,6 +113,46 @@
       <button class="button">Resume / CV</button>
       <button class="button">Projects</button>
       <button class="button">Ultimate Rocket League</button>
+    </div>
+
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate Astronomy Masters Student currently working on completing my thesis to earn my degree. 
+        Throughout my academic journey, I have consistently prioritized the development of my programming skills, 
+        integrating them into my coursework, research, and various projects. My unwavering curiosity and fascination 
+        lie at the intersection of science and technology, driving me to explore the boundless possibilities of 
+        data-driven and numerical approaches in solving complex problems. Pursuing an educational background in modern 
+        Astronomy and Physics has provided me with the ideal platform to grow as a scientist, programmer, and critical thinker. 
+        While my path may have been unconventional, I firmly believe that my unique experiences offer a fresh 
+        perspective, distinct from that of a traditional computer science major.
+      </p>
+      <p>
+        In my spare time, I love playing video games, running, and hiking. I also help run Ultimate Rocket League,
+        a rocket league community of 2100+ members, where I manage the operations of the league's Google Sheets
+        with custom Discord bots.
+      </p>
+      <hr> <!-- Gray horizontal line -->
+    </div>
+
+    <div class="skills-section">
+      <h2 class="skills-header">My Skills</h2>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">FORTRAN</div>
+        <div class="skill">C/C++</div>
+        <div class="skill">MATLAB</div>
+        <div class="skill">UNIX/LINUX</div>
+        <div class="skill">TensorFlow</div>
+        <div class="skill">SciKitLearn</div>
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Git/GitHub</div>
+        <div class="skill">LaTeX</div>
+        <div class="skill">Modeling</div>
+        <div class="skill">Algorithms</div>
+      </div>
+      <hr> <!-- Gray horizontal line -->
     </div>
   </div>
 </body>
