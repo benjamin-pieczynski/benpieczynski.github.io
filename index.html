@@ -7,7 +7,7 @@
 
     body {
       background-color: #FFFFFF; /* White background color */
-      color: #FFFFFF; /* White text color */
+      color: #FFFFFF; /* Black text color */
       font-family: 'Montserrat', sans-serif; /* Modern font style */
       margin: 0; /* Remove default margin */
       padding: 0; /* Remove default padding */
@@ -36,14 +36,16 @@
     .content {
       background-color: #FFFFFF; /* White background color */
       padding: 20px; /* Add padding to the content */
+      display: flex; /* Enable flexbox layout */
+      flex-wrap: wrap; /* Allow items to wrap */
     }
 
     .button-group {
-      background: linear-gradient(-45deg, #222222, #444444); /* Dark grey gradient background */
       padding: 4px; /* Add padding to the button group */
       display: flex; /* Enable flexbox layout */
       justify-content: space-between; /* Distribute buttons evenly */
       margin-bottom: 20px; /* Add margin bottom for spacing */
+      flex-basis: 100%; /* Take up full width */
     }
 
     .button {
@@ -96,6 +98,70 @@
       margin-bottom: 20px; /* Add margin bottom for spacing */
       color: #000000; /* Black text color */
     }
+
+    .education-section {
+      flex: 1; /* Take up remaining space */
+      margin-top: 20px; /* Add margin top for spacing */
+    }
+
+    .education-header {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000000; /* Black heading color */
+    }
+
+    .education-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .education-logo {
+      width: 100px;
+      height: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 20px; /* Add right margin */
+      object-fit: cover; /* Maintain aspect ratio and cover container */
+    }
+
+    .education-details {
+      flex: 1;
+      color: #000000; /* Black text color */
+    }
+
+    .social-media-section {
+      margin-top: 20px; /* Add margin top for spacing */
+      flex-basis: 100%; /* Take up full width */
+    }
+
+    .social-media-header {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000000; /* Black heading color */
+    }
+
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .social-media-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-media-icons img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -132,7 +198,7 @@
         a rocket league community of 2100+ members, where I manage the operations of the league's Google Sheets
         with custom Discord bots.
       </p>
-      <hr> <!-- Gray horizontal line -->
+      <hr class="horizontal-line"> <!-- Gray horizontal line -->
     </div>
 
     <div class="skills-section">
@@ -152,7 +218,49 @@
         <div class="skill">Modeling</div>
         <div class="skill">Algorithms</div>
       </div>
-      <hr> <!-- Gray horizontal line -->
+      <hr class="horizontal-line"> <!-- Gray horizontal line -->
+    </div>
+    <div class="education-section">
+      <h2 class="education-header">Education</h2>
+      <div class="education-item">
+        <div class="education-logo" style="background-image: url('sdsu.png')"></div>
+        <div class="education-details">
+          <h3>San Diego State University</h3>
+          <p>Master of Science in Astronomy (Expected: Summer 2023)</p>
+          <p>San Diego, CA</p>
+        </div>
+      </div>
+      <div class="education-item">
+        <div class="education-logo" style="background-image: url('nau.png')"></div>
+        <div class="education-details">
+          <h3>Northern Arizona University</h3>
+          <p>Bachelor of Science in Physics and Astronomy</p>
+          <p>Flagstaff, AZ</p>
+        </div>
+      </div>
+      <div class="education-item">
+        <div class="education-logo" style="background-image: url('arc.jpg')"></div>
+        <div class="education-details">
+          <h3>American River College</h3>
+          <p>Associates of Science in Physical Sciences / Mathematics</p>
+          <p>Sacramento, CA</p>
+        </div>
+      </div>
+      <hr class="horizontal-line"> <!-- Gray horizontal line -->
+    </div>
+    <div class="social-media-section">
+      <h2 class="social-media-header">Other Media</h2>
+      <div class="social-media-icons">
+        <a href="https://github.com/benjamin-pieczynski" target="_blank">
+          <img src="github.jpg" alt="GitHub Profile">
+        </a>
+        <a href="https://www.linkedin.com/in/benjamin-pieczynski-102b65132/" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn Profile">
+        </a>
+        <a href="https://profile.indeed.com/resume" target="_blank">
+          <img src="indeed.png" alt="Indeed Profile">
+        </a>
+      </div>
     </div>
   </div>
 </body>
