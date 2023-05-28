@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <style>
+    body {
+      background-color: #FFFFFF; /* White background color */
+      color: #000000; /* Black text color */
+      font-family: Arial, sans-serif; /* Font style */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    .header {
+      background-image: url('project_bg.png'); /* Set the background image */
+      background-size: cover; /* Adjust the background image size */
+      background-position: center; /* Center the background image */
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FFFFFF; /* White title color */
+      font-size: 36px;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .project {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #000000;
+    }
+
+    .project-content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .project-image {
+      width: 200px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .project-details {
+      flex: 1;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 14px;
+    }
+
+    .repository-link {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(-45deg, #ed5620, #2f0d04); /* Orange and black gradient */
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .repository-link:hover {
+      background-color: #FF4500; /* Hover color */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>PROJECTS</h1>
+  </div>
+
+  <div class="projects-container">
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="project1-image.jpg" alt="Project 1 Image">
+        <div class="project-details">
+          <h2 class="project-title">Project 1</h2>
+          <p class="project-description">Brief description of Project 1.</p>
+          <a class="repository-link" href="https://github.com/project1-repo">Repository Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="project2-image.jpg" alt="Project 2 Image">
+        <div class="project-details">
+          <h2 class="project-title">Project 2</h2>
+          <p class="project-description">Brief description of Project 2.</p>
+          <a class="repository-link" href="https://github.com/project2-repo">Repository Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="project3-image.jpg" alt="Project 3 Image">
+        <div class="project-details">
+          <h2 class="project-title">Project 3</h2>
+          <p class="project-description">Brief description of Project 3.</p>
+          <a class="repository-link" href="https://github.com/project3-repo">Repository Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="project4-image.jpg" alt="Project 4 Image">
+        <div class="project-details">
+          <h2 class="project-title">Project 4</h2>
+          <p class="project-description">Brief description of Project 4.</p>
+          <a class="repository-link" href="https://github.com/project4-repo">Repository Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="project5-image.jpg" alt="Project 5 Image">
+        <div class="project-details">
+          <h2 class="project-title">Project 5</h2>
+          <p class="project-description">Brief description of Project 5.</p>
+          <a class="repository-link" href="https://github.com/project5-repo">Repository Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
