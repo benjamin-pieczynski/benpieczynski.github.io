@@ -24,29 +24,55 @@
       font-size: 36px;
     }
 
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 0 10px;
+      background: linear-gradient(-45deg, #ed5620, #2f0d04); /* Orange and black gradient */
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #FF4500; /* Hover color */
+    }
+
     .projects-container {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
       margin-top: 20px;
     }
 
     .project {
-      width: 100%;
-      margin-bottom: 20px;
+      width: calc(50% - 20px); /* Adjusted width */
+      margin: 0 10px 20px;
       padding: 20px;
       border: 1px solid #000000;
     }
 
     .project-content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      text-align: center; /* Center text */
     }
 
     .project-image {
-      width: 200px;
+      width: 100%;
       height: auto;
-      margin-right: 20px;
+      max-width: 200px; /* Limit the maximum width */
+      margin-bottom: 20px;
     }
 
     .project-details {
@@ -63,7 +89,8 @@
       font-size: 14px;
     }
 
-    .repository-link {
+    .repository-link,
+    .button {
       display: inline-block;
       margin-top: 10px;
       background: linear-gradient(-45deg, #ed5620, #2f0d04); /* Orange and black gradient */
@@ -76,7 +103,8 @@
       transition: background-color 0.3s;
     }
 
-    .repository-link:hover {
+    .repository-link:hover,
+    .button:hover {
       background-color: #FF4500; /* Hover color */
     }
   </style>
@@ -84,6 +112,12 @@
 <body>
   <div class="header">
     <h1>PROJECTS</h1>
+  </div>
+
+  <div class="buttons-container">
+    <a class="button" href="index.html">Return Home</a>
+    <a class="button" href="research.html">Research</a>
+    <a class="button" href="presentation.html">Presentation</a>
   </div>
 
   <div class="projects-container">
@@ -117,33 +151,31 @@
 
     <div class="project">
       <div class="project-content">
-        <img class="project-image" src="project3-image.jpg" alt="Project 3 Image">
+        <img class="project-image" src="detrended.png" alt="Project 3 Image">
         <div class="project-details">
-          <h2 class="project-title">Project 3</h2>
-          <p class="project-description">Brief description of Project 3.</p>
-          <a class="repository-link" href="https://github.com/project3-repo">Repository Link</a>
+          <h2 class="project-title">TESS Downloader / Detrender</h2>
+          <p class="project-description">
+            Searches the MAST archive for TESS data given a TIC number.
+            Built-in functionality for binary star systems to find the orbital
+            period and detrend the light curve in preparation for ELC light curve
+            synthesis code.
+          </p>
+          <a class="repository-link" href="https://github.com/benjamin-pieczynski/TESS_downloader_detrender/">Repository Link</a>
         </div>
       </div>
     </div>
 
     <div class="project">
       <div class="project-content">
-        <img class="project-image" src="project4-image.jpg" alt="Project 4 Image">
+        <img class="project-image" src="url_sr_logo.png" alt="Project 4 Image">
         <div class="project-details">
-          <h2 class="project-title">Project 4</h2>
-          <p class="project-description">Brief description of Project 4.</p>
-          <a class="repository-link" href="https://github.com/project4-repo">Repository Link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-content">
-        <img class="project-image" src="project5-image.jpg" alt="Project 5 Image">
-        <div class="project-details">
-          <h2 class="project-title">Project 5</h2>
-          <p class="project-description">Brief description of Project 5.</p>
-          <a class="repository-link" href="https://github.com/project5-repo">Repository Link</a>
+          <h2 class="project-title">URL Score Reporter Discord Bot</h2>
+          <p class="project-description">
+            Bot designed for Rocket League replay submission with ballchasing.com API. Use of the bot is
+            restricted to use in the Ultimate Rocket League Discord league. Inquiries for how to implement
+            the bot in other leagues are welcome.
+          </p>
+          <a class="repository-link" href="https://github.com/benjamin-pieczynski/URL_score_reporter/">Repository Link</a>
         </div>
       </div>
     </div>
