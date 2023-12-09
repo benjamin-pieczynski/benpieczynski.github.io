@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <style>
+    body {
+      background-color: #FFFFFF; /* White background color */
+      color: #000000; /* Black text color */
+      font-family: Arial, sans-serif; /* Font style */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    .header {
+      background-image: url('/images/project_bg.png'); /* Set the background image */
+      background-size: cover; /* Adjust the background image size */
+      background-position: center; /* Center the background image */
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FFFFFF; /* White title color */
+      font-size: 36px;
+    }
+
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 0 10px;
+      background: linear-gradient(-45deg, #ed5620, #2f0d04); /* Orange and black gradient */
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #FF4500; /* Hover color */
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .project {
+      width: calc(50% - 20px); /* Adjusted width */
+      margin: 0 10px 20px;
+      padding: 20px;
+      border: 1px solid #000000;
+    }
+
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      text-align: center; /* Center text */
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      max-width: 200px; /* Limit the maximum width */
+      margin-bottom: 20px;
+    }
+
+    .project-details {
+      flex: 1;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 14px;
+    }
+
+    .repository-link,
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(-45deg, #ed5620, #2f0d04); /* Orange and black gradient */
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .repository-link:hover,
+    .button:hover {
+      background-color: #FF4500; /* Hover color */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>PROJECTS</h1>
+  </div>
+
+  <div class="buttons-container">
+    <a class="button" href="index.html">Return Home</a>
+    <a class="button" href="https://drive.google.com/drive/folders/1Sz_BBhqquJGk7JgUetwRkS5js9yjILFu?usp=sharing">Research / Presentations</a>
+  </div>
+
+  <div class="projects-container">
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="/images/densitywave.png" alt="Project 1 Image">
+        <div class="project-details">
+          <h2 class="project-title">Star Cluster Age Distribution Analysis</h2>
+          <p class="project-description">
+            Jupyter Notebook example for star cluster age distribution analysis using
+          </p>
+          <a class="repository-link" href="https://github.com/benjamin-pieczynski/age-distribution-analysis-star-clusters/">Repository Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="/images/comp_phys.png" alt="Project 2 Image">
+        <div class="project-details">
+          <h2 class="project-title">Computational Physics</h2>
+          <p class="project-description">
+            Compilation of my work in a graduate level computational physics course.
+            Demonstrated work in FORTRAN programming and implementation of numerical algorithms
+            and techniques.
+          </p>
+          <a class="repository-link" href="https://github.com/benjamin-pieczynski/computational_physics/">Repository Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="/images/detrended.png" alt="Project 3 Image">
+        <div class="project-details">
+          <h2 class="project-title">TESS Downloader / Detrender</h2>
+          <p class="project-description">
+            Searches the MAST archive for TESS data given a TIC number.
+            Built-in functionality for binary star systems to find the orbital
+            period and detrend the light curve in preparation for ELC light curve
+            synthesis code.
+          </p>
+          <a class="repository-link" href="https://github.com/benjamin-pieczynski/TESS_downloader_detrender/">Repository Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-content">
+        <img class="project-image" src="/images/url_sr_logo.png" alt="Project 4 Image">
+        <div class="project-details">
+          <h2 class="project-title">URL Score Reporter Discord Bot</h2>
+          <p class="project-description">
+            Bot designed for Rocket League replay submission with ballchasing.com API. Use of the bot is
+            restricted to use in the Ultimate Rocket League Discord league. Inquiries for how to implement
+            the bot in other leagues are welcome.
+          </p>
+          <a class="repository-link" href="https://github.com/benjamin-pieczynski/URL_score_reporter/">Repository Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

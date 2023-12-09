@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+    body {
+      background-color: #FFFFFF; /* White background color */
+      color: #000000; /* Black text color */
+      font-family: 'Montserrat', sans-serif; /* Modern font style */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    .header {
+      background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
+      padding: 20px; /* Add padding to the header */
+      display: flex; /* Enable flexbox layout */
+      align-items: center; /* Center align items vertically */
+    }
+
+    h1 {
+      color: #FFFFFF; /* White heading color */
+      font-family: 'Montserrat', sans-serif; /* Modern font style */
+    }
+
+    .content {
+      background-color: #F0F0F0; /* Light gray background color */
+      padding: 20px; /* Add padding to the content */
+    }
+
+    .form-container {
+      background-color: #FFFFFF; /* White background color */
+      padding: 20px; /* Add padding to the form container */
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .form-container p {
+      margin-bottom: 20px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .form-container textarea {
+      height: 150px; /* Adjust the height of the textarea */
+    }
+
+    .form-container input[type="submit"] {
+      background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
+      border: 2px solid #FFFFFF; /* White outline */
+      color: #FFFFFF; /* White text color */
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 0px; /* Rounded corners */
+      cursor: pointer;
+    }
+
+    .return-button {
+      margin-top: 2px;
+      text-align: center;
+    }
+
+    .return-button a {
+      text-decoration: none;
+      background: linear-gradient(-45deg, #000f3c, #4976fd);
+      border: 2px solid #FFFFFF;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 00px;
+      padding: 10px 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Contact Me</h1>
+  </div>
+
+  <div class="content">
+    <div class="form-container">
+      <p>Please contact me regarding the following:</p>
+
+      <ul>
+        <li>Employment opportunities</li>
+        <li>Potential gig work</li>
+        <li>Astronomy-related questions</li>
+        <li>Partnership opportunities for Ultimate Rocket League</li>
+      </ul>
+
+      <form action="https://formsubmit.co/c02b83d7c72fa8f29de31456480c8782" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Send">
+        <div class="return-button">
+            <a href="index.html">Return to Home</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

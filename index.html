@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+    body {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
+    padding: 20px; /* Add padding to the header */
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Center align items vertically */
+}
+
+h1 {
+  color: #FFFFFF; /* White heading color */
+  font-family: 'Montserrat', sans-serif; /* Modern font style */
+}
+
+.profile-image {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 20px; /* Add right margin */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.content {
+  background-color: #FFFFFF; /* White background color */
+  padding: 20px; /* Add padding to the content */
+  display: flex; /* Enable flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.button-group {
+  padding: 4px; /* Add padding to the button group */
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Distribute buttons evenly */
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+  flex-basis: 100%; /* Take up full width */
+}
+
+.button {
+  width: 230px;
+  height: 50px;
+  background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
+  border: 2px solid #FFFFFF; /* White outline */
+  color: #FFFFFF; /* White text color */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px; /* Rounded corners */
+  cursor: pointer;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center align text vertically */
+  justify-content: center; /* Center align text horizontally */
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align skills horizontally */
+  margin-top: 20px;
+}
+
+.skill {
+  width: 170px;
+  height: 40px;
+  background: linear-gradient(-45deg, #000f3c, #4976fd); /* Blue and light blue gradient */
+  border: 2px solid #FFFFFF; /* White outline */
+  color: #FFFFFF; /* White text color */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px; /* Rounded corners */
+  cursor: pointer;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center align text vertically */
+  justify-content: center; /* Center align text horizontally */
+  margin-bottom: 10px;
+}
+
+.skills-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000; /* Black heading color */
+}
+
+.about-me {
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+  color: #000000; /* Black text color */
+}
+
+.education-section {
+  flex: 1; /* Take up remaining space */
+  margin-top: 20px; /* Add margin top for spacing */
+}
+
+.education-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000; /* Black heading color */
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-logo {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px; /* Add right margin */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.education-details {
+  flex: 1;
+  color: #000000; /* Black text color */
+}
+
+.social-media-section {
+  margin-top: 20px; /* Add margin top for spacing */
+  flex-basis: 100%; /* Take up full width */
+}
+
+.social-media-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000; /* Black heading color */
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-media-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media-icons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="profile-image" src="/images/profile.png" alt="Your Image">
+    <div>
+      <h1>BENJAMIN PIECZYNSKI</h1>
+      <p>UC San Diego Staff Research Associate - Space Weather Forecasting</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="button-group">
+      <a class="button" href="contact.html">Contact</a>
+      <a class="button" href="projects.html">Projects</a>
+      <a class="button" href="/other/downloads/resume_benpieczynski.pdf" download>Resume / CV download</a>
+      <a class="button" href="/other/downloads/bpieczynski_thesis.pdf" download>Thesis download</a>
+    </div>
+
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>
+        Recent graduate with a Masters of Science in Astronomy from San Diego State University. I currently work as a 
+        Staff Research Associate at UC San Diego. My position at UCSD is focused on <a href="https://ips.ucsd.edu/">IPS Space Weather Forecasting</a> 
+        and spacecraft instrumentation for the developement of the <a href="https://ashi.ucsd.edu/">All Sky Heliospheric Imager</a>. 
+        At SDSU I studied Circumbinary Planet detection using Eclipse Time Variations in time series data. Throughout my studies 
+        I have also studied and workied with cosmological simulations and extragalactic astronomy. My interests extend to work with 
+        machine learning and artificial intelligence due to the potential impact and oppurtunities in astronomy and physics.
+      </p>
+        
+      <p>
+        In my spare time, I love playing video games, running, and hiking. I also help run Ultimate Rocket League,
+        a rocket league community of 2100+ members, where I manage the operations of the league data and statistics department
+        with custom Discord bots.
+      </p>
+      <hr class="horizontal-line"> <!-- Gray horizontal line -->
+    </div>
+
+    <div class="skills-section">
+      <h2 class="skills-header">My Skills</h2>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">FORTRAN</div>
+        <div class="skill">C/C++</div>
+        <div class="skill">MATLAB</div>
+        <div class="skill">UNIX/LINUX</div>
+        <div class="skill">TensorFlow</div>
+        <div class="skill">SciKitLearn</div>
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Git/GitHub</div>
+        <div class="skill">LaTeX</div>
+        <div class="skill">Modeling</div>
+        <div class="skill">Algorithms</div>
+      </div>
+      <hr class="horizontal-line"> <!-- Gray horizontal line -->
+    </div>
+    <div class="education-section">
+      <h2 class="education-header">Education</h2>
+      <div class="education-item">
+        <div class="education-logo" style="background-image: url('/images/sdsu.png')"></div>
+        <div class="education-details">
+          <h3>San Diego State University</h3>
+          <p>Master of Science in Astronomy (Expected: Summer 2023)</p>
+          <p>San Diego, CA</p>
+        </div>
+      </div>
+      <div class="education-item">
+        <div class="education-logo" style="background-image: url('/images/nau.png')"></div>
+        <div class="education-details">
+          <h3>Northern Arizona University</h3>
+          <p>Bachelor of Science in Physics and Astronomy</p>
+          <p>Flagstaff, AZ</p>
+        </div>
+      </div>
+      <div class="education-item">
+        <div class="education-logo" style="background-image: url('/images/arc.jpg')"></div>
+        <div class="education-details">
+          <h3>American River College</h3>
+          <p>Associates of Science in Physical Sciences / Mathematics</p>
+          <p>Sacramento, CA</p>
+        </div>
+      </div>
+      <hr class="horizontal-line"> <!-- Gray horizontal line -->
+    </div>
+    <div class="social-media-section">
+      <h2 class="social-media-header">Other Media</h2>
+      <div class="social-media-icons">
+        <a href="https://github.com/benjamin-pieczynski" target="_blank">
+          <img src="/images/github.jpg" alt="GitHub Profile">
+        </a>
+        <a href="https://www.linkedin.com/in/benjamin-pieczynski-102b65132/" target="_blank">
+          <img src="/images/linkedin.png" alt="LinkedIn Profile">
+        </a>
+        <a href="https://profile.indeed.com/resume" target="_blank">
+          <img src="/images/indeed.png" alt="Indeed Profile">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
